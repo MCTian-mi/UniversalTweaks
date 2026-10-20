@@ -101,6 +101,7 @@ final def mod_dependencies = [
     'curse.maven:elenaidodge2-442962:3343308'                         : [debug_elenai_dodge_2],
     'curse.maven:enderstorage-245174:2755787'                         : [debug_enderstorage],
     'maven.modrinth:ALKGFBqb:6AWXd1S8'                                : [debug_enderutilities],
+    'curse.maven:engineers-decor-313866:3783239': [debug_engineersdecor],
     'curse.maven:epic-siege-mod-229449:3356157'                       : [debug_epic_siege_mod],
     'curse.maven:evilcraft-74610:2811267'                             : [debug_evilcraft],
     'curse.maven:extrabotany-299086:3112313'                          : [debug_extrabotany],

@@ -167,6 +167,10 @@ public class UTConfigMods
     @Config.Name("Ender Utilities")
     public static final EnderUtilitiesCategory ENDER_UTILITIES = new EnderUtilitiesCategory();
 
+    @Config.LangKey("cfg.universaltweaks.modintegration.engineersdecor")
+    @Config.Name("Engineer's Decor")
+    public static final EngineersDecorCategory ENGINEERS_DECOR = new EngineersDecorCategory();
+
     @Config.LangKey("cfg.universaltweaks.modintegration.esm")
     @Config.Name("Epic Siege Mod")
     public static final EpicSiegeModCategory EPIC_SIEGE_MOD = new EpicSiegeModCategory();
@@ -959,6 +963,14 @@ public class UTConfigMods
         @Config.Name("Show FTB Utilities Buttons in Handy Bag")
         @Config.Comment("Shows FTB Utilities and FTB Library sidebar buttons in Ender Utilities Handy Bags")
         public boolean utHandyBagFTBUtilitiesButtonsToggle = true;
+    }
+
+    public static class EngineersDecorCategory
+    {
+        @Config.RequiresMcRestart
+        @Config.Name("Pipe Valve Fill Does Not Mutate Input")
+        @Config.Comment("Fixes the Pipe Valve mutates the fluidstack during fluid transfer")
+        public boolean utPipeValveNoParamMutation = true;
     }
 
     public static class EpicSiegeModCategory

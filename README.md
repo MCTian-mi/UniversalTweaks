@@ -483,6 +483,8 @@ Available in flavors [**Cleanroom**](https://www.curseforge.com/minecraft/modpac
 * **Ender Utilities**
     * **Fix GUI Close Slot Crash:** Prevents crashes from processing slot hotkeys after closing Ender Utilities GUIs (e.g. handybag hotkey 1-9 crash)
     * **Show FTB Utilities Buttons in Handy Bag:** Shows the configured FTB Utilities and FTB Library sidebar buttons in Handy Bags
+* **Engineer's Decor**
+    * **Pipe Valve Fill Does Not Mutate Input:** Fixes the Pipe Valve modifying the FluidStack it is given, so a simulated fill no longer shrinks the caller's stack
 * **Epic Siege Mod**
     * **Disable Digger AI Debug:** Disables leftover debug logging inside the digger AI of the beta builds
 * **ExtraBotany**
