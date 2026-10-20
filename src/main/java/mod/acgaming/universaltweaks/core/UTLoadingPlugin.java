@@ -15,6 +15,7 @@ import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 import mod.acgaming.universaltweaks.Tags;
 import mod.acgaming.universaltweaks.config.UTConfigBugfixes;
 import mod.acgaming.universaltweaks.config.UTConfigGeneral;
+import mod.acgaming.universaltweaks.config.UTConfigMods;
 import mod.acgaming.universaltweaks.config.UTConfigTweaks;
 import mod.acgaming.universaltweaks.util.UTReflectionUtil;
 import zone.rong.mixinbooter.Context;
@@ -223,6 +224,7 @@ public class UTLoadingPlugin implements IFMLLoadingPlugin, IEarlyMixinLoader
         {
             if (UTConfigGeneral.MASTER_SWITCHES.utMasterSwitchBugfixes)
             {
+                put("mixins/mods/mixins.rsctr.json", c -> c.isModPresent("rs_ctr") && UTConfigMods.REDSTONE_CONTROL.utSquareGateIconsToggle);
                 put("mixins/bugfixes/mixins.blocks.banner.json", c -> UTConfigBugfixes.BLOCKS.utBannerBoundingBoxToggle && !c.isModPresent("renderlib"));
                 put("mixins/bugfixes/mixins.blocks.blockoverlay.json", c -> UTConfigBugfixes.BLOCKS.BLOCK_OVERLAY.utBlockOverlayToggle);
                 put("mixins/bugfixes/mixins.blocks.blockbreakprogress.json", c -> UTConfigBugfixes.BLOCKS.utBlockBreakProgressToggle);

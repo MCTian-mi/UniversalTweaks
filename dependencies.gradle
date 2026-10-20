@@ -44,6 +44,9 @@
 // should be handled in the main dependencies function.
 // When adding additional elements, sort by alphabetical name
 final def mod_dependencies = [
+  'curse.maven:cd4017be-library-229208:3004631'   : [debug_cd4017be_library],
+  'curse.maven:redstone-control-319994:3005623'  : [debug_redstone_control],
+
     'CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.684'         : [debug_crafttweaker, debug_stages],
     'TechReborn:TechReborn-ModCompatibility-1.12.2:1.4.0.76:universal': [debug_tech_reborn],
     'codechicken:ChickenASM:1.12-1.0.2.9'                             : [debug_forgemultipartcbe, debug_project_red],
